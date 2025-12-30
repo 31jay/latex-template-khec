@@ -1,7 +1,33 @@
+% =========================
+% --- Document Class ---
+% =========================
+\documentclass[12pt,a4paper]{report} 
+
 \input{config.tex}
 
 \begin{document}
 
-\input{Mid/titlepage}
+\input{Proposal/titlepage}
 \pagenumbering{roman}
 \setcounter{page}{0}
+\input{Proposal/acknowledgement}
+\input{Proposal/abstract}
+
+\renewcommand{\contentsname}{Table of Contents}
+\tableofcontents
+
+\listoffigures
+\listoftables
+\input{Proposal/abbv}
+
+\pagenumbering{arabic}
+\setcounter{page}{0}
+
+\input{Proposal/ch1_introduction}
+\input{Proposal/literature_review}
+\setcounter{page}{1}
+
+\input{Proposal/references}
+\newpage
+\input{Proposal/test}
+\end{document}
