@@ -1,0 +1,46 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in,bottom=1in,left=1.5in,right=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[numbers]{natbib}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsfonts,bbm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{times}
+\usepackage{pifont}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath} % Times-like font
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+%\DeclareUnicodeCharacter{202F}{\,}
+\usepackage[pagestyles]{titlesec}
+
+% =========================
+% --- Hyphenation Control ---
+% =========================
+\usepackage[none]{hyphenat}
+\sloppy
+\setlength{\emergencystretch}{1.5em}
+
+
+\titleformat
+{\chapter} %command
+[display]   %shape
+{\Huge \bfseries} %format
+{Chapter \thechapter} % chapter no format
+{1ex} % separation between chapter 1 and introduction
+{}
+[
+    \vspace{0ex}
+]
+
+\titlespacing*{\chapter}{0ex}{-2ex}{4ex}
+
+\usepackage{float}
